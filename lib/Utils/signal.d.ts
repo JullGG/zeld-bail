@@ -14,6 +14,19 @@ export declare const generateOrGetPreKeys: (creds: AuthenticationCreds, range: n
 };
 export declare const xmppSignedPreKey: (key: SignedKeyPair) => BinaryNode;
 export declare const xmppPreKey: (pair: KeyPair, id: number) => BinaryNode;
+export declare const extractE2ESessionFromRetryReceipt: (receipt: BinaryNode) => {
+    registrationId: number;
+    identityKey: Uint8Array;
+    signedPreKey: {
+        keyId: number;
+        publicKey: Uint8Array;
+        signature: Uint8Array;
+    };
+    preKey?: {
+        keyId: number;
+        publicKey: Uint8Array;
+    };
+} | null;
 export declare const parseAndInjectE2ESessions: (node: BinaryNode, repository: SignalRepository) => Promise<void>;
 export declare const extractDeviceJids: (result: BinaryNode, myJid: string, excludeZeroDevices: boolean) => JidWithDevice[];
 /**

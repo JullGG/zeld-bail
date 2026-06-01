@@ -1,365 +1,98 @@
-<div align="center">
+# WhatsApp Baileys
 
-# Renvy Bail
-
-### Modified WhatsApp Socket Engine for Renvy Bot
-
-<p>
-  <img src="https://img.shields.io/badge/version-1.3-111827?style=for-the-badge" alt="version" />
-  <img src="https://img.shields.io/badge/runtime-CommonJS-111827?style=for-the-badge" alt="runtime" />
-  <img src="https://img.shields.io/badge/node-%3E%3D20-111827?style=for-the-badge" alt="node" />
-  <img src="https://img.shields.io/badge/owner-panpan-111827?style=for-the-badge" alt="owner" />
+<p align="center">
+  <img src="https://files.catbox.moe/1jr5sg.jpg" alt="Thumbnail" />
 </p>
 
-`Renvy Bail` adalah package WhatsApp socket berbasis Baileys yang sudah dimodifikasi untuk kebutuhan bot modern, fast response, channel/newsletter, AIRich message builder, interactive message, database auth, dan RTC caller.
+/*
+  ©2025 FallZx Infinity. All Rights Reserved.
 
-</div>
+  Type: Lilys-Baileys WhatsApp Bot
+  Creator: FallZx Infinity
+  YouTube: fallzx-features
+
+  PROHIBITED:
+  - Copying any part of this code without explicit permission.
+  - Selling, redistributing, or modifying the code without the author's approval.
+  - Claiming this project as your own.
+
+  WARNING:
+  Any act of plagiarism, data theft, or illegal redistribution of this project
+  will be subject to legal action under applicable intellectual property laws.
+
+  This project is NOT open-source. Unauthorized use of the code is strictly forbidden.
+
+  For collaboration or usage permissions, please contact via YouTube: fallzx-features
+*/
+
 
 ---
 
-## Overview
+### 🚀 Key Features & Benefits
 
-```txt
-Name     : baileys
-Version  : 1.3
-Owner    : panpan
-Bot      : Renvy
-Runtime  : CommonJS
-Node.js  : >= 20
-Package  : Renvy Bail
-```
+- 🔐 Flexible Pairing Options
+Supports both automatic and custom pairing methods for seamless connectivity.
 
-## Installation
+- 🛠️ Improved Stability
+Resolves previous pairing issues that caused connection failures or unexpected disconnections.
 
-Install dari file lokal:
+- 💬 Rich Interactive Messaging
+Enables interactive messages, action buttons, and dynamic menus for engaging user experiences.
 
-```bash
-npm install ./Renvy-bail.tgz
-```
+- 🔄 Smart Session Management
+Automatically manages sessions efficiently to ensure consistent and reliable performance.
 
-Install dari GitHub:
+- 📱 Multi-Device Compatibility
+Fully compatible with the latest WhatsApp multi-device capabilities.
 
-```bash
-npm install github:Panzqq/Renvy-bail
-```
+- ⚙️ Lightweight & Easy Integration
+Designed to be lightweight, stable, and easy to embed into a wide range of systems.
 
-Import CommonJS:
+- 🤖 Ideal for Bots & Automation
+Perfect for building chatbots, customer service automation, and full-scale communication solutions.
 
-```js
-const baileys = require('baileys')
-const { default: makeWASocket, useMultiFileAuthState } = require('baileys')
-```
+- 📘 Developer-Friendly Resources
+Comes with comprehensive documentation and ready-to-use code examples to accelerate development.
 
-## Highlight Features
+---
 
-| Feature | Description |
-|---|---|
-| Fast Send Engine | Optimized send/relay message untuk bot yang butuh response cepat |
-| Group Metadata Cache | Cache metadata grup dengan fallback supaya bot lebih stabil |
-| Newsletter / Channel | Create, metadata, follow, update, react, fetch, dan delete channel |
-| AIRich Builder | Rich message builder langsung dari package `baileys` |
-| Interactive Message | Native flow, button, list, product, payment, album, event, dan PTV |
-| Database Auth | Support auth state berbasis Keyv/database adapter |
-| RTC Caller | Support `VoipClient` untuk eksperimen voice call / RTC |
-| Anti Crash Patch | Patch socket dan query agar lebih aman dari error umum |
-| Sensitive Log Cleaner | Console lebih bersih dari data sensitif session/key |
+### 🚀 Getting Started
 
-## Core Patch
+Begin by installing the library via your preferred package manager, then follow the provided configuration guide. You can also utilize the ready-made example codes to understand how the features work. Use session storage and interactive messaging features to build complete, stable solutions tailored to your business or project needs.
 
-```txt
-[+] Anti crash handler
-[+] Sensitive log cleaner
-[+] Session repair helper
-[+] Query safe retry
-[+] Fast mode socket
-[+] CommonJS friendly
-[+] Boot banner Renvy Bail
-```
+---
 
-## Fast Send Engine
+### Why Choose whatsapp baileys?
 
-```txt
-[+] Fast group send
-[+] Group send tanpa metadata berat
-[+] Optional send queue
-[+] Optional send retry
-[+] Fast no-session skip
-[+] Sender key retry
-[+] Optimized relay message
-[+] Read receipt, delivery receipt, dan update media message
-```
+Start by installing the library using your preferred package manager. Follow the step-by-step configuration guide to set everything up quickly. Explore the included example codes to understand key features in action. Leverage session management and interactive messaging capabilities to build robust, scalable solutions tailored to your project's or business's specific needs.
 
-## Group System
+---
 
-```txt
-[+] groupMetadata cache
-[+] stale group metadata fallback
-[+] minimal metadata fallback
-[+] auto clear expired metadata cache
-[+] anti rate-overlimit metadata query
-[+] groupCreate
-[+] groupLeave
-[+] groupUpdateSubject
-[+] groupUpdateDescription
-[+] groupParticipantsUpdate
-[+] groupRequestParticipantsList
-[+] groupRequestParticipantsUpdate
-[+] groupInviteCode
-[+] groupRevokeInvite
-[+] groupAcceptInvite
-[+] groupAcceptInviteV4
-[+] groupGetInviteInfo
-[+] groupToggleEphemeral
-[+] groupSettingUpdate
-[+] groupMemberAddMode
-[+] groupJoinApprovalMode
-[+] groupFetchAllParticipating
-```
+## ✨ Fitur Unggulan
 
-## Newsletter / Channel
+• ✅ Supports custom pairing codes that are stable and secure
+Mendukung kode pairing kustom yang stabil dan aman untuk koneksi WhatsApp.
 
-```txt
-[+] newsletterCreate
-[+] newsletterMetadata
-[+] newsletterFollow
-[+] newsletterUnfollow
-[+] newsletterMute
-[+] newsletterUnmute
-[+] newsletterAction
-[+] newsletterReactionMode
-[+] newsletterUpdateName
-[+] newsletterUpdateDescription
-[+] newsletterUpdatePicture
-[+] newsletterRemovePicture
-[+] newsletterAdminCount
-[+] newsletterChangeOwner
-[+] newsletterDemote
-[+] newsletterDelete
-[+] newsletterReactMessage
-[+] newsletterFetchMessages
-[+] newsletterFetchUpdates
-[+] subscribeNewsletterUpdates
-```
+• 🛠️ Fixes previous issues related to pairing and authentication
+Telah diperbaiki dari berbagai masalah sebelumnya terkait pairing dan otentikasi.
 
-Create channel:
+• 💬 Features interactive messages and action buttons for dynamic menu creation
+Menyediakan fitur pesan interaktif dan tombol aksi untuk membuat menu dinamis dengan mudah.
 
-```js
-await conn.newsletterCreate('Renvy Official', 'Channel resmi Renvy Bail', 'ALL')
-```
+• 🔄 Automatic and efficient session management for long-term stability
+Manajemen sesi otomatis dan efisien untuk kestabilan penggunaan jangka panjang.
 
-Get channel metadata:
+• 📱 Compatible with the latest multi-device features from WhatsApp
+Kompatibel dengan fitur multi-perangkat terbaru dari WhatsApp.
 
-```js
-const meta = await conn.newsletterMetadata('jid', '120xxx@newsletter', 'OWNER')
-```
+• ⚙️ Easy to integrate and customize based on your needs
+Mudah diintegrasikan dan dikustomisasi sesuai kebutuhan pengembanganmu.
 
-## AIRich Message Builder
+• 🤖 Perfect for developing bots, customer service automation, and other communication applications
+Cocok untuk membuat bot, otomatisasi layanan pelanggan, atau aplikasi komunikasi lainnya.
 
-AIRich sudah ditanam langsung ke package `baileys`, jadi bisa dipakai tanpa package builder tambahan.
+---
 
-```js
-const Baileys = require('baileys')
+📚 For full documentation, installation instructions, and usage examples, please refer to the official GitHub repository and join the community discussions. This project is actively maintained and continuously improved to support developers building modern WhatsApp automation solutions.
 
-const msg = new Baileys.AIRich()
-  .text('Visit [Google](https://google.com) for details')
-  .build()
-```
-
-Kirim langsung lewat socket:
-
-```js
-const Baileys = require('baileys')
-
-await new Baileys.AIRich(conn)
-  .title('Renvy AIRich')
-  .text('Visit [Google](https://google.com) for details')
-  .footer('Renvy Bail')
-  .send(m.chat, {
-    quoted: m,
-    botJid: conn.user?.id
-  })
-```
-
-AIRich capabilities:
-
-```txt
-[+] Rich text builder
-[+] Hyperlink parser: [text](url)
-[+] Citation parser
-[+] LaTeX/media style payload helper
-[+] Native flow interactive payload
-[+] Button builder
-[+] Carousel builder
-[+] Image/content helper
-[+] Fluent chaining API
-[+] CJS export dari require('baileys')
-```
-
-## Interactive Message
-
-```txt
-[+] Native flow button
-[+] Interactive message
-[+] Button message
-[+] List message
-[+] Template button
-[+] Product message
-[+] Payment message
-[+] Album message
-[+] Event message
-[+] Scheduled call message
-[+] Poll message
-[+] Poll result snapshot
-[+] PTV / video bulat
-[+] Group story message
-[+] AI message attribute
-[+] Edit message
-[+] Delete message
-[+] Disappearing message setting
-```
-
-## Dugong Helper
-
-```txt
-[+] handlePayment
-[+] handleProduct
-[+] handleInteractive
-[+] handleAlbum
-[+] handleEvent
-[+] handlePollResult
-[+] handleGroupStory
-```
-
-## Database Auth / Keyv Session
-
-```txt
-[+] makeKeyvAuthState
-[+] makeDatabaseAuthState
-[+] Support adapter database berbasis Keyv
-[+] Bisa dipakai untuk Redis/Mongo/SQLite/custom adapter
-[+] Session fleksibel untuk bot panel dan multi environment
-```
-
-## RTC / Caller
-
-RTC caller tersedia lewat `caller.mjs`.
-
-```js
-const { VoipClient } = await import('baileys/caller.mjs')
-```
-
-```txt
-[+] VoipClient
-[+] ActiveCall
-[+] Audio feeder
-[+] Relay transport
-[+] Signaling engine
-[+] WASM engine
-[+] Worker bootstrap
-[+] Call timeout handling
-[+] Active call release fix
-```
-
-## Profile, Privacy, and Account
-
-```txt
-[+] profilePictureUrl
-[+] updateProfilePicture
-[+] removeProfilePicture
-[+] updateProfileStatus
-[+] updateProfileName
-[+] updateBlockStatus
-[+] fetchBlocklist
-[+] fetchStatus
-[+] fetchPrivacySettings
-[+] updateLastSeenPrivacy
-[+] updateOnlinePrivacy
-[+] updateProfilePicturePrivacy
-[+] updateStatusPrivacy
-[+] updateReadReceiptsPrivacy
-[+] updateGroupsAddPrivacy
-[+] updateDefaultDisappearingMode
-```
-
-## Chat Utility
-
-```txt
-[+] chatModify
-[+] resyncAppState
-[+] cleanDirtyBits
-[+] addChatLabel
-[+] removeChatLabel
-[+] addMessageLabel
-[+] removeMessageLabel
-[+] star
-[+] upsertMessage
-```
-
-## Socket Utility
-
-```txt
-[+] makeWASocket
-[+] requestPairingCode
-[+] waitForConnectionUpdate
-[+] waitForSocketOpen
-[+] sendRawMessage
-[+] sendNode
-[+] query
-[+] logout
-[+] end
-[+] uploadPreKeys
-[+] uploadPreKeysToServerIfRequired
-[+] sendWAMBuffer
-```
-
-## Presence
-
-```txt
-[+] sendPresenceUpdate
-[+] presenceSubscribe
-[+] online/offline presence
-[+] composing/recording state
-```
-
-## CommonJS Plugin Example
-
-```js
-let handler = async (m, { conn }) => {
-    const Baileys = require('baileys')
-
-    await new Baileys.AIRich(conn)
-        .title('Renvy Bail')
-        .text('Visit [Google](https://google.com) for details')
-        .footer('Owner: panpan')
-        .send(m.chat, {
-            quoted: m,
-            botJid: conn.user?.id
-        })
-}
-
-handler.help = handler.command = ['tesrich']
-handler.tags = ['main']
-module.exports = handler
-```
-
-## Package Exports
-
-```txt
-[+] WAProto
-[+] Utils
-[+] Types
-[+] Store
-[+] Defaults
-[+] WABinary
-[+] WAM
-[+] WAUSync
-[+] makeWASocket
-[+] AIRich
-[+] installAIRich
-```
-
-## Owner
-
-```txt
-Renvy Bail v1.3 by panpan
-```
+🙏 Thank you for choosing WhatsApp Baileys as your trusted tool for WhatsApp automation. We appreciate your support!

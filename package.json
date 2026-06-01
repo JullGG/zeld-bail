@@ -1,27 +1,24 @@
 {
   "name": "baileys",
-  "version": "1.3.0",
-  "description": "Renvy Bail v1.3 - modified Baileys engine with AIRich, newsletter, fast send, database auth, and RTC caller.",
+  "version": "1.3.0-renvyairich.19-badmacfix",
+  "description": "Renvy Bail Fast Plus with RTC caller and Bad MAC session recovery patch.",
   "keywords": [
     "whatsapp",
+    "lily-baileys",
     "baileys",
-    "renvy",
-    "renvy-bail",
-    "whatsapp-bot",
     "whatsapp-web",
-    "newsletter",
-    "channel",
-    "airich",
-    "rtc",
-    "commonjs"
+    "whatsapp-chat",
+    "fallzx",
+    "wabot",
+    "botwa",
+    "stvnnvs"
   ],
-  "homepage": "https://github.com/Panzqq/Renvy-bail#readme",
+  "homepage": "https://github.com/FallEzz/baileys-corp.git",
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Panzqq/Renvy-bail.git"
+    "url": "https://github.com/FallEzz/baileys-corp.git"
   },
   "license": "MIT",
-  "author": "panpan",
+  "author": "Adhiraj Singh",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
@@ -117,8 +114,5 @@
   "packageManager": "yarn@1.22.19",
   "engines": {
     "node": ">=20.0.0"
-  },
-  "bugs": {
-    "url": "https://github.com/Panzqq/Renvy-bail/issues"
   }
 }
