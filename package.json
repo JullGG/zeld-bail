@@ -1,7 +1,7 @@
 {
   "name": "baileys",
-  "version": "1.3.0-renvyairich.19-badmacfix",
-  "description": "Renvy Bail Fast Plus with RTC caller and Bad MAC session recovery patch.",
+  "version": "1.3.0-renvyairich.20-badmac-fix",
+  "description": "Renvy Bail Fast Plus with AIRich, RTC caller, and Bad MAC/session recovery fixes from Baileys rc13.",
   "keywords": [
     "whatsapp",
     "lily-baileys",
@@ -56,7 +56,7 @@
     "futoin-hkdf": "^1.5.1",
     "gradient-string": "^3.0.0",
     "libphonenumber-js": "^1.10.20",
-    "libsignal": "npm:@shennmine/libsignal-node",
+    "libsignal": "^6.0.0",
     "lodash": "^4.17.21",
     "music-metadata": "^7.12.3",
     "node-cache": "^5.1.2",
