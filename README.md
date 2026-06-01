@@ -5,7 +5,7 @@
 ### Modified WhatsApp Socket Engine for Renvy Bot
 
 <p>
-  <img src="https://img.shields.io/badge/version-1.3-111827?style=for-the-badge" alt="version" />
+  <img src="https://img.shields.io/badge/version-1.3.0--renvyairich.22-111827?style=for-the-badge" alt="version" />
   <img src="https://img.shields.io/badge/runtime-CommonJS-111827?style=for-the-badge" alt="runtime" />
   <img src="https://img.shields.io/badge/node-%3E%3D20-111827?style=for-the-badge" alt="node" />
   <img src="https://img.shields.io/badge/owner-panpan-111827?style=for-the-badge" alt="owner" />
@@ -21,7 +21,7 @@
 
 ```txt
 Name     : baileys
-Version  : 1.3
+Version  : 1.3.0-renvyairich.22
 Owner    : panpan
 Bot      : Renvy
 Runtime  : CommonJS
@@ -30,6 +30,12 @@ Package  : Renvy Bail
 ```
 
 ## Installation
+
+Install dari file lokal:
+
+```bash
+npm install ./Renvy-bail.tgz
+```
 
 Install dari GitHub:
 
@@ -57,6 +63,17 @@ const { default: makeWASocket, useMultiFileAuthState } = require('baileys')
 | RTC Caller | Support `VoipClient` untuk eksperimen voice call / RTC |
 | Anti Crash Patch | Patch socket dan query agar lebih aman dari error umum |
 | Sensitive Log Cleaner | Console lebih bersih dari data sensitif session/key |
+
+
+## Send Waiting Fix
+
+```txt
+[+] Group safe send mengikuti Baileys ori
+[+] Sender-key distribution wajib berhasil sebelum group message dikirim
+[+] PN/LID device sync dari USync LID protocol
+[+] Zero device tidak lagi dilewati pada direct message
+[+] Fast group send berisiko dimatikan secara default
+```
 
 ## Core Patch
 
