@@ -1,7 +1,7 @@
 {
   "name": "baileys",
-  "version": "1.3.0-renvyairich.24-onwhatsapp-jid-fix",
-  "description": "Renvy Bail Fast Plus with AIRich, RTC caller, Signal/session repair, send-waiting protection, group metadata getter hotfix, and onWhatsApp JID guard.",
+  "version": "1.3.0-renvyairich.20-badmac-fix",
+  "description": "Renvy Bail Fast Plus with AIRich, RTC caller, and Bad MAC/session recovery fixes from Baileys rc13.",
   "keywords": [
     "whatsapp",
     "lily-baileys",
@@ -27,8 +27,7 @@
     "engine-requirements.js",
     "dist/**/*",
     "assets/**/*",
-    "caller.mjs",
-    "RENVI_PATCH_REPORT.md"
+    "caller.mjs"
   ],
   "scripts": {
     "build:all": "tsc && typedoc",
@@ -115,6 +114,5 @@
   "packageManager": "yarn@1.22.19",
   "engines": {
     "node": ">=20.0.0"
-  },
-  "type": "commonjs"
+  }
 }
