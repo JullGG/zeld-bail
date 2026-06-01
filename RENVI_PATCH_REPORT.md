@@ -49,3 +49,44 @@ fastNoSessionSkip: true
 ```
 
 Tidak disarankan untuk bot publik/grup besar.
+
+## v1.3.0-renvyairich.23-groupmetadata-fix
+
+### Added / Fixed
+
+```txt
+[+] Fixed ReferenceError: groupMetadataGetter is not defined
+[+] rawRelayMessage now selects cachedGroupMetadata getter from send options first
+[+] Falls back to socket config cachedGroupMetadata when available
+[+] Falls back safely to groupMetadata(jid) when no metadata getter exists
+```
+
+### Preserved
+
+```txt
+[+] AIRich preserved
+[+] Newsletter/channel preserved
+[+] Fast send engine preserved
+[+] Database auth preserved
+[+] RTC caller/caller.mjs preserved
+[+] Session core v21 preserved
+[+] Send waiting fix v22 preserved
+[+] CommonJS require("baileys") preserved
+```
+
+## v1.3.0-renvyairich.24-onwhatsapp-jid-fix
+
+### Changed
+- Fixed `TypeError: jid.replace is not a function` in `lib/Socket/chats.js` / `onWhatsApp`.
+- `onWhatsApp` now accepts string JID, phone number, array of JIDs, and common object payloads such as `{ jid }`, `{ id }`, `{ user }`, `{ remoteJid }`, or `{ key: { remoteJid } }`.
+- Invalid or empty JID input is skipped safely instead of crashing the socket.
+
+### Preserved
+- AIRich builder and CommonJS export.
+- Newsletter/channel functions.
+- Fast send engine.
+- Database auth / Keyv auth.
+- RTC caller and `caller.mjs`.
+- Session core v21 fixes.
+- Send waiting fix v22.
+- Group metadata getter fix v23.

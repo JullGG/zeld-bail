@@ -1,7 +1,7 @@
 {
   "name": "baileys",
-  "version": "1.3.0-renvyairich.22-send-waiting-fix",
-  "description": "Renvy Bail Fast Plus with AIRich, RTC caller, Signal transaction/session repair, retry receipt manager, pre-key checker, app-state sync patch, and identity/session migration helpers.",
+  "version": "1.3.0-renvyairich.24-onwhatsapp-jid-fix",
+  "description": "Renvy Bail Fast Plus with AIRich, RTC caller, Signal/session repair, send-waiting protection, group metadata getter hotfix, and onWhatsApp JID guard.",
   "keywords": [
     "whatsapp",
     "lily-baileys",
