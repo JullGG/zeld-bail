@@ -1,8 +1,8 @@
 <div align="center">
 
-# Renvy Bail
+# Zeld Bail
 
-### Modified WhatsApp Socket Engine for Renvy Bot
+### Modified WhatsApp Socket Engine for Zelda Bot
 
 <p>
   <img src="https://img.shields.io/badge/version-1.3-111827?style=for-the-badge" alt="version" />
@@ -11,7 +11,7 @@
   <img src="https://img.shields.io/badge/owner-panpan-111827?style=for-the-badge" alt="owner" />
 </p>
 
-`Renvy Bail` adalah package WhatsApp socket berbasis Baileys yang sudah dimodifikasi untuk kebutuhan bot modern, fast response, channel/newsletter, AIRich message builder, interactive message, database auth, dan RTC caller.
+`Zeld Bail` adalah package WhatsApp socket berbasis Baileys yang sudah dimodifikasi untuk kebutuhan bot modern, fast response, channel/newsletter, AIRich message builder, interactive message, database auth, dan RTC caller.
 
 </div>
 
@@ -22,11 +22,11 @@
 ```txt
 Name     : baileys
 Version  : 1.3
-Owner    : panpan
-Bot      : Renvy
-Runtime  : CommonJS
+Owner    : juljul
+Bot      : Zelda
+Runtime  : CommonJS x ESM
 Node.js  : >= 20
-Package  : Renvy Bail
+Package  : Zeld Bail
 ```
 
 ## Installation
@@ -34,7 +34,7 @@ Package  : Renvy Bail
 Install dari GitHub:
 
 ```bash
-npm install github:Panzqq/Renvy-bail
+npm install github:JullGG/zeld-bail
 ```
 
 Import CommonJS:
@@ -355,5 +355,5 @@ module.exports = handler
 ## Owner
 
 ```txt
-Renvy Bail v1.3 by panpan
+Zeld Bail v1.3 by Juljul
 ```
